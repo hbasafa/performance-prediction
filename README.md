@@ -13,7 +13,16 @@ Link: https://opendata-renewables.engie.com/explore/index
 To get a better understanding of the data, its parameters and their relationships it might be useful to read the following wiki at [here](https://en.wikipedia.org/wiki/Wind_turbine_design).
 
 # Anomaly Detection
-TBA
+Anomaly Detection is the task of finding abnormal behavior in a system which is against the expected behaviour. The behavior is considered as input or output.
+
+In this task, we want to identify the abnormal times at which the system Power (p) registered an unexpected value with respect to its previous values. As a solution, we utilized a moving average window considering a range of possible values for the moment. This can be used as a warning for the system control manager to avoid any disaster, failure or decommisioning cost.
+
+## Experiment
+Values of Power(p) in one month (01/12/2017-01/01/2018):
+![Power Values](results/series.png)
+
+Using a window of size = 7, the result is as follows:
+![Power Anomalies](results/anomaly.png)
 
 # Performance Prediction
 TBA
