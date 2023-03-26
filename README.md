@@ -27,7 +27,20 @@ Using a window of size = 7:
 The anomaly moments are shown in red points.
 
 # Performance Prediction
-TBA
+In the task of performance prediction, we want to anticipate the future values of one variable like Power or Torch with respect to other available variables. In this way, we leveraged Gated Recurrent Units (GRU) to follow the system dynamics. The reason for using RNNs for this problem is the recurrent paradigme of the problem as we need to predict value for each time step. And, we used GRU because of its effiency in terms of memory and time (variables).
+
+## Experiment
+We have used 1 layer GRU consisting of 8 neurons as the model. Then, giving a sample of size = 100 as input, the next values are predicted.
+![GRU](results/gru.png)
+
+We achieved the following results:
+Metric | Value
+--- | ---
+R2-Score | 0.85
+MAE |  114.81
+MSE |  23651.47
+MEDAE |  91.89
+ME |  502.73
 
 # Synthetic Control
 Comming soon!
