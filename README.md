@@ -21,8 +21,10 @@ In this task, we want to identify the abnormal times at which the system Power (
 Values of Power(p) in one month (01/12/2017-01/01/2018):
 ![Power Values](results/series.png)
 
-Using a window of size = 7, the result is as follows:
+Using a window of size = 7:
 ![Power Anomalies](results/anomaly.png)
+
+The anomaly moments are shown in red points.
 
 # Performance Prediction
 TBA
